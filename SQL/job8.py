@@ -11,7 +11,7 @@ connexion = mysql.connector.connect(
 cursor = connexion.cursor()
 
 select_units="SELECT unit.name "\
-            "FROM unit"\
+            "FROM unit "\
             "WHERE unit.name LIKE '%Pool%';"
 
 cursor.execute(select_units)
